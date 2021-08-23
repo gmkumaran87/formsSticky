@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Sticky</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <fieldset>
+                <legend>Subscription form</legend>
+                <div class="form-row required">
+                    <label for="username">Name</label>
+                    <input type="text" id='username' required minlength=1 maxlength="10" placeholder="Enter your name">
+                </div>
+                <div class="form-row required">
+                    <label for="email">Email</label>
+                    <input type="email" id='email' required placeholder="Enter your Email">
+                </div>
+                <div class="form-row">
+                    <label for="city">City <span>(Optional)</span></label>
+                    <input type="text" id='city' required minlength=1 maxlength="10" placeholder="Enter your City">
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+
+</html>
