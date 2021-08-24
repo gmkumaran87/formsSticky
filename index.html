@@ -7,11 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms and Sticky</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7654cad21c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <h1 class="main-heading">GUVI Survey form </h1>
-    <h4>Thank you for taking this survey for us to improve</h4>
+    <header class="nav-header">
+        <nav>
+            <h2>The learning Platform</h2>
+            <ul class="nav-links">
+                <li> <a href="#"> courses</a></li>
+                <li><a href="#">practise</a></li>
+                <li> <a href="#"> Contact Us</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="form-heading">
+        <h1 class="main-heading">GUVI Survey form </h1>
+        <h4>Thank you for taking this survey for us to improve</h4>
+    </section>
+
     <div class="container">
         <form>
             <fieldset>
@@ -62,13 +79,14 @@
                 </div>
 
                 <div class="form-row">
-                    <button class="btn">Submit</button>
+                    <button class="btn" id="submitBtn">Submit</button>
                 </div>
 
             </fieldset>
         </form>
     </div>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
