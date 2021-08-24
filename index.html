@@ -10,10 +10,12 @@
 </head>
 
 <body>
+    <h1 class="main-heading">GUVI Survey form </h1>
+    <h4>Thank you for taking this survey for us to improve</h4>
     <div class="container">
         <form>
             <fieldset>
-                <legend>Subscription form</legend>
+                <legend>Survey form</legend>
                 <div class="form-row required">
                     <label for="username">Name</label>
                     <input type="text" id='username' required minlength=1 maxlength="10" placeholder="Enter your name">
@@ -25,6 +27,42 @@
                 <div class="form-row">
                     <label for="city">City <span>(Optional)</span></label>
                     <input type="text" id='city' required minlength=1 maxlength="10" placeholder="Enter your City">
+                </div>
+
+                <div class="form-row ">
+                    <h4 class="gender-heading">Gender </h4>
+                    <label for="gender"><input type="radio" id='gender' value="male"> Male</label>
+                    <label for="gender"><input type="radio" id='gender' value="female"> Female </label>
+                </div>
+
+                <div class="form-row">
+                    <label for="role">Which option best describes your current role?</label>
+                    <select class="dropdown" name="role" id="role" multiple>
+                        <option disabled selected value>Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="full time job">Full time job</option>
+                        <option value="part time learner">Part time learner</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+
+                <div class="form-row ">
+                    <h4 class="improve-heading">What would you like to see improved? (Check all that apply) </h4>
+
+                    <label for="improve"><input type="checkbox" id='improve' value="frontend"> Front-End Project</label>
+                    <label for="improve"><input type="checkbox" id='improve' value="backend"> Back-End Project </label>
+                    <label for="improve"><input type="checkbox" id='improve' value="backend"> Data Visualisation
+                    </label>
+                </div>
+
+                <div class="form-row ">
+                    <h4 class="comments-heading">Any comments or suggestion </h4>
+                    <textarea name="comments" id="" cols="30" rows="10" placeholder="Enter your comments here"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <button class="btn">Submit</button>
                 </div>
 
             </fieldset>
